@@ -25,14 +25,18 @@ public class WordGameTester
         System.out.println("Enter another word: ");
         String word = input.nextLine();
 
-        // Add random word at index
-        // Print out the word
+        System.out.println(game1.bananaSplit(idx,word));
 
 
         // Ask for a character (store as a String)
+        System.out.println("Please enter a character in "+game1 + " : ");
+        String letter = input.nextLine();
         // Ask for random word
+        System.out.println("Please enter a random word: ");
+        word = input.nextLine();
         // Add random word at character
         // Print out the word
+        System.out.println(game1.bananaSplit(letter,word));
 
 
 

@@ -24,7 +24,10 @@ public class WordGames
     {
         // Insert insertText at the position
         // insertIdx
-        return null;
+        String firstPart = word.substring(0,insertIdx);
+        String secondPart = word.substring(insertIdx);
+
+        return firstPart+insertText+secondPart;
     }
 
 
@@ -32,14 +35,18 @@ public class WordGames
     {
         // Insert insertText after the first
         // occurence of the insertChar
-        return null;
+        int index = word.indexOf(insertChar);
+        String firstPart = word.substring(0,index);
+        String secondPart = word.substring(index);
+
+        return firstPart+insertText+secondPart;
     }
 
 
     public String toString()
     {
         // Games[word]
-        return null;
+        return "\"" + word + "\"";
     }
 
 
