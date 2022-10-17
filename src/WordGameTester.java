@@ -7,9 +7,15 @@ public class WordGameTester
         Scanner input = new Scanner(System.in);
 
         // Ask for a word
-
+        System.out.println("Please enter a word: ");
+        String usersWord = input.nextLine();
         // Scramble it
+        WordGames game1 = new WordGames(usersWord);
+        String scrambled = game1.scramble();
+
         // Print out scrambled word
+        System.out.println(scrambled);
+
 
         // Ask for an index
         // Ask for random word

@@ -11,6 +11,11 @@ public class WordGames
     {
         // switch first half
         // and second half
+        int length = word.length();
+        int middle = length/2;
+        String firstHalf = word.substring(0,middle);
+        String secondHalf = word.substring(middle);
+        return secondHalf + firstHalf;
 
     }
 
@@ -19,7 +24,7 @@ public class WordGames
     {
         // Insert insertText at the position
         // insertIdx
-
+        return null;
     }
 
 
@@ -27,14 +32,14 @@ public class WordGames
     {
         // Insert insertText after the first
         // occurence of the insertChar
-
+        return null;
     }
 
 
     public String toString()
     {
         // Games[word]
-
+        return null;
     }
 
 
